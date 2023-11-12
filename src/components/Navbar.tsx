@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Sidebar } from "./Sidebar";
+import { SCREENS } from "@/screens";
 
 export const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
@@ -25,6 +27,7 @@ export const Navbar = () => {
           ></TogglerItem>
         </MobileNavToggler>
       </ToggleMenuContainer>
+      <Sidebar isNavToggled={isNavToggled} />
     </NavbarContainer>
   );
 };
@@ -42,14 +45,17 @@ const NavbarContainer = styled.div`
   }
 `;
 const ToggleMenuContainer = styled.div`
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-a.nav-button{
+  a.nav-button {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
+  }
+  ${SCREENS.lg}{
+    display: none;
+  }
 `;
 const MobileNavToggler = styled.div`
   width: 40px;
