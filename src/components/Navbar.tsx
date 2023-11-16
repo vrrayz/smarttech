@@ -43,6 +43,10 @@ const NavbarContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 600;
   }
+  ${SCREENS.lg}{
+    display: flex;
+    justify-content:center;
+  }
 `;
 const ToggleMenuContainer = styled.div`
   display: flex;

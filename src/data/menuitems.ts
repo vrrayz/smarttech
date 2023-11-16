@@ -74,3 +74,12 @@ export const supportMenu = {
       },
     ],
   };
+  export const menuItems = [
+    {title: 'Home',isDropdown: false, link: '/', items: []},
+    {...productsMenu, isDropdown: true},
+    {...solutionsMenu, isDropdown: true},
+    {title: 'Technology',isDropdown: false, link: '/technology',  items: []},
+    {title: 'Partnership',isDropdown: false, link: '/partnership',  items: []},
+    {...supportMenu, isDropdown: true},
+    {...aboutMenu, isDropdown: true},
+  ]

@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { SearchInput } from "./Forms";
-import { ArrowForwardIos } from "@mui/icons-material";
 import { SidebarDropdown, SidebarItem } from "./SidebarDropdown";
-import { aboutMenu, productsMenu, solutionsMenu, supportMenu } from "@/data/menuitems";
+import { menuItems } from "@/data/menuitems";
 
 interface SidebarProps {
   isNavToggled: boolean;
 }
 
 export const Sidebar = ({ isNavToggled }: SidebarProps) => {
-
   return (
     <SidebarContainer
       className={`${isNavToggled && "transformed"}`}
@@ -21,13 +19,17 @@ export const Sidebar = ({ isNavToggled }: SidebarProps) => {
         <div>
           <SearchInput />
           <ul className="sidebar-list">
-            <SidebarItem>Home</SidebarItem>
-            <SidebarDropdown {...productsMenu} />
-            <SidebarDropdown {...solutionsMenu} />
-            <SidebarItem>Technology</SidebarItem>
-            <SidebarItem>Partnership</SidebarItem>
-            <SidebarDropdown {...supportMenu} />
-            <SidebarDropdown {...aboutMenu} />
+            {menuItems.map((menuItem, i) =>
+              menuItem.isDropdown ? (
+                <SidebarDropdown
+                  key={i}
+                  title={menuItem.title}
+                  items={menuItem.items}
+                />
+              ) : (
+                <SidebarItem key={i}>{menuItem.title}</SidebarItem>
+              )
+            )}
           </ul>
         </div>
         <div></div>
@@ -52,7 +54,7 @@ const MainSidebar = styled.div`
     letter-spacing: 1.5px;
     padding: 12px 0px;
   }
-  overflow-y:scroll;
+  overflow-y: scroll;
 `;
 const SidebarContainer = styled.div`
   position: fixed;
