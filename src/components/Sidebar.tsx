@@ -27,7 +27,7 @@ export const Sidebar = ({ isNavToggled }: SidebarProps) => {
                   items={menuItem.items}
                 />
               ) : (
-                <SidebarItem key={i}>{menuItem.title}</SidebarItem>
+                <SidebarItem key={i}><a href={menuItem.link}>{menuItem.title}</a></SidebarItem>
               )
             )}
           </ul>

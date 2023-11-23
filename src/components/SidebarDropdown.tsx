@@ -27,7 +27,7 @@ export const SidebarDropdown = ({ title, items }: SidebarDropdownProps) => {
       </div>
       <ul className={`dropdown-list ${!isToggled && "is-hidden"}`}>
         {items.map(({ item, link }, i) => (
-          <SidebarItem key={i}>{item}</SidebarItem>
+          <SidebarItem key={i}><a href={link}>{item}</a></SidebarItem>
         ))}
       </ul>
     </SidebarItem>

@@ -4,6 +4,23 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Sidebar } from "./Sidebar";
 import { SCREENS } from "@/screens";
+import { menuItems } from "@/data/menuitems";
+import { SearchInput } from "./Forms";
+
+export interface MenuItem {
+  title: string;
+  isDropdown: boolean;
+  link?: string;
+  items: {
+    item: string;
+    link: string;
+  }[];
+}
+
+interface ListItemProps {
+  menuItem: MenuItem
+}
+
 
 export const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
@@ -27,25 +44,60 @@ export const Navbar = () => {
           ></TogglerItem>
         </MobileNavToggler>
       </ToggleMenuContainer>
+      <NavbarList>
+        {menuItems.map((menuItem, i) => (
+          <ListItem menuItem={menuItem} key={i} />
+        ))}
+      </NavbarList>
+      <SearchContainer>
+        <SearchInput />
+      </SearchContainer>
       <Sidebar isNavToggled={isNavToggled} />
     </NavbarContainer>
   );
 };
+
+const ListItem = ({ menuItem }: ListItemProps) => {
+  return (
+    <li className={menuItem.isDropdown ? `dropdown`:``}>
+      <a href={menuItem.link}>{menuItem.title}</a>
+      {menuItem.isDropdown && (
+        <ul className={`dropdown-items`}>
+          {menuItem.items.map((item, j) => <li key={j}><a href="#">{item.item}</a></li>)}
+        </ul>
+      )}
+    </li>)
+}
 
 const NavbarContainer = styled.div`
   padding: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-shadow: 0px 0px 8px;
+  font-size: 0.85rem;
 
   .logo {
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-  }
-  ${SCREENS.lg}{
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+  }
+  ${SCREENS.lg} {
+    display: grid;
+    // justify-content: center;
+    grid-template-columns: 180px 1fr 230px;
+    padding: 0px 12px;
+  }
+  ${SCREENS.xl} {
+    display: flex;
+    justify-content: center;
+    .logo {
+      margin: 0;
+      margin-left: auto;
+    }
   }
 `;
 const ToggleMenuContainer = styled.div`
@@ -57,7 +109,7 @@ const ToggleMenuContainer = styled.div`
     justify-content: center;
     flex-direction: column;
   }
-  ${SCREENS.lg}{
+  ${SCREENS.lg} {
     display: none;
   }
 `;
@@ -104,5 +156,59 @@ const TogglerItem = styled.div`
   }
   &.transformed:nth-child(2) {
     transform: rotate(-45deg);
+  }
+`;
+const NavbarList = styled.ul`
+  display: none;
+  grid-template-columns: repeat(${menuItems.length}, 1fr);
+  text-align: center;
+  font-weight: 200;
+  li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  li:hover{
+    background-color: #051f80;
+    color: #fff;
+  }
+  li a {
+    padding: 16px 0px;
+  }
+  ${SCREENS.lg} {
+    display: grid;
+  }
+  ${SCREENS.xl} {
+    li a {
+      padding: 16px;
+    }
+  }
+  li.dropdown .dropdown-items{
+    position: absolute;
+    top: 50px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    max-height: 0px;
+    overflow: hidden;
+    width: 200px;
+    transition: max-height 250ms;
+  }
+  li.dropdown:hover .dropdown-items{
+    max-height: 350px;
+  }
+`;
+const SearchContainer = styled.div`
+  display: none;
+
+  justify-content: center;
+  flex-flow: column;
+  margin: auto;
+  ${SCREENS.lg} {
+    display: flex;
+  }
+  ${SCREENS.xl} {
+    margin: 0;
+    margin-right: auto;
   }
 `;
