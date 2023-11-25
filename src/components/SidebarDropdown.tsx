@@ -34,7 +34,7 @@ export const SidebarDropdown = ({ title, items }: SidebarDropdownProps) => {
   );
 };
 
-const StyleArrowRight = styled(ArrowForwardIos)`
+export const StyleArrowRight = styled(ArrowForwardIos)`
   transform: rotate(0deg);
   transition: transform 500ms;
 
