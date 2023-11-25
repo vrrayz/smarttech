@@ -98,8 +98,8 @@ const GridSection = styled.div<{ $items: number }>`
     grid-template-rows: none;
   }
   ${SCREENS.xl} {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin-left: 190px;
+    margin-right: 190px;
   }
 `;
 
