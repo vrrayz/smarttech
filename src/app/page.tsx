@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </Jumbotron>
       <Section header={"IOT SOLUTIONS"}>
-        <GridSection $items={3} className="mt-5 xl:mt-8">
+        <GridSection $items={3} className="mt-5 xl:my-8">
           <Card>
             <img
               src={"/images/smart-home.jpg"}
@@ -84,6 +84,8 @@ export default function Home() {
             </div>
           </Card>
         </GridSection>
+      </Section>
+      <Section header={"PRODUCTS"}>
       </Section>
     </main>
   );
