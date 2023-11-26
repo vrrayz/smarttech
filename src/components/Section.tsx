@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 interface Prop {
   header: string;
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const Section = ({ header, children }: Prop) => {
@@ -16,6 +16,8 @@ export const Section = ({ header, children }: Prop) => {
 };
 export const CustomSection = styled.section`
   padding: 16px;
+  max-width: 1200px;
+  margin: auto;
 `;
 export const SectionHeader = styled.h4`
   font-size: 1.6rem;

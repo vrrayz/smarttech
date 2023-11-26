@@ -42,6 +42,10 @@ export const StyleArrowRight = styled(ArrowForwardIos)`
     transform: rotate(90deg);
   }
 `;
+export const StyleArrowLeft = styled(ArrowForwardIos)`
+  transform: rotate(180deg);
+  transition: transform 500ms;
+`;
 export const SidebarItem = styled.li`
   padding: 12px 0px;
   border-bottom: 1px solid #999;
