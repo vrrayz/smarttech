@@ -4,52 +4,18 @@ import { Carousel } from "@/components/Carousel";
 import { Section } from "@/components/Section";
 import { StyleArrowLeft, StyleArrowRight } from "@/components/SidebarDropdown";
 import { Caption } from "@/components/Text";
+import {
+  iotSolutions,
+  productsCarouselData,
+  productsData,
+  technologyCarouselData,
+} from "@/data/home";
 import { SCREENS } from "@/screens";
+import { CloudDownload, DocumentScanner, People } from "@mui/icons-material";
 import Image from "next/image";
 import styled from "styled-components";
 
 export default function Home() {
-  const productsCarouselData = [
-    { image: "/images/jumbo-1.jpg", title: "Virtual Reality" },
-    { image: "/images/smart-home.jpg", title: "Smart Home" },
-    { image: "/images/smart-home-1.jpg", title: "Smart Home" },
-  ];
-  const technologyCarouselData = [
-    {
-      image: "/images/jumbo-1.jpg",
-      title: "Tech one",
-      description:
-        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
-      link: "/technology",
-    },
-    {
-      image: "/images/jumbo-1.jpg",
-      title: "Tech two",
-      description:
-        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
-      link: "/technology",
-    },
-    {
-      image: "/images/jumbo-1.jpg",
-      title: "Tech three",
-      description:
-        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
-      link: "/technology",
-    },
-    {
-      image: "/images/jumbo-1.jpg",
-      title: "Tech fourx",
-      description:
-        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
-      link: "/technology",
-    },
-  ];
-  const productsData = [
-    { image: "/images/product_1.webp", title: "Product One" },
-    { image: "/images/product_2.webp", title: "Product Two" },
-    { image: "/images/product_3.webp", title: "Product Three" },
-  ];
-
   return (
     <main>
       <Jumbotron className="mb-5 xl:mb-8">
@@ -62,69 +28,28 @@ export default function Home() {
       </Jumbotron>
       <Section header={"IOT SOLUTIONS"}>
         <GridSection $items={3} className="mt-5 xl:my-8">
-          <Card>
-            <img
-              src={"/images/smart-home.jpg"}
-              alt={"home"}
-              className="card-image"
-            />
-            <h4 className="card-heading">Smart Home</h4>
-            <div className="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                perferendis, at cum minima mollitia sit blanditiis quasi nulla
-                ab necessitatibus sequi ad ullam quae reiciendis quam minus
-                ipsum nisi repudiandae?
-              </p>
-            </div>
-            <div className="card-footer">
-              <a href="#">
-                Learn More <StyleArrowRight fontSize="small" />
-              </a>
-            </div>
-          </Card>
-          <Card>
-            <img
-              src={"/images/smart-home.jpg"}
-              alt={"home"}
-              className="card-image"
-            />
-            <h4 className="card-heading">Smart Home</h4>
-            <div className="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                perferendis, at cum minima mollitia sit blanditiis quasi nulla
-                ab necessitatibus sequi ad ullam quae reiciendis quam minus
-                ipsum nisi repudiandae?
-              </p>
-            </div>
-            <div className="card-footer">
-              <a href="#">
-                Learn More <StyleArrowRight fontSize="small" />
-              </a>
-            </div>
-          </Card>
-          <Card>
-            <img
-              src={"/images/smart-home.jpg"}
-              alt={"home"}
-              className="card-image"
-            />
-            <h4 className="card-heading">Smart Home</h4>
-            <div className="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                perferendis, at cum minima mollitia sit blanditiis quasi nulla
-                ab necessitatibus sequi ad ullam quae reiciendis quam minus
-                ipsum nisi repudiandae?
-              </p>
-            </div>
-            <div className="card-footer">
-              <a href="#">
-                Learn More <StyleArrowRight fontSize="small" />
-              </a>
-            </div>
-          </Card>
+          {iotSolutions.map((solution, i) => (
+            <Card key={i}>
+              <Image
+                src={solution.image}
+                alt={solution.title}
+                className="card-image"
+                width={200}
+                height={200}
+              />
+              <h4 className="card-heading">{solution.title}</h4>
+              <div className="card-body">
+                <p>
+                  {solution.description}
+                </p>
+              </div>
+              <div className="card-footer">
+                <a href="#">
+                  Learn More <StyleArrowRight fontSize="small" />
+                </a>
+              </div>
+            </Card>
+          ))}
         </GridSection>
       </Section>
       <Section header={"PRODUCTS"}>
@@ -179,9 +104,53 @@ export default function Home() {
           />
         </Banner>
       </Section>
+      <Section header={""}>
+        <GridSection $items={3}>
+          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+            <div className="panel-overlay">
+              <CloudDownload fontSize="large" />
+              <span>Download Center</span>
+            </div>
+          </ExtraLinkPanel>
+          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+            <div className="panel-overlay">
+              <DocumentScanner fontSize="large" />
+              <span>About Us</span>
+            </div>
+          </ExtraLinkPanel>
+          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+            <div className="panel-overlay">
+              <People fontSize="large" />
+              <span>Partnership</span>
+            </div>
+          </ExtraLinkPanel>
+        </GridSection>
+      </Section>
     </main>
   );
 }
+const ExtraLinkPanel = styled.div<{ $background: string }>`
+  background: url(${(props) => props.$background});
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+  svg {
+    margin: 0 auto;
+  }
+  .panel-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 256px;
+    color: #fff;
+    background: #0000005c;
+  }
+`;
 const Banner = styled.div`
   background: url("/images/banner_bg.jpg");
   background-position: center;
