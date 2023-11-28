@@ -6,6 +6,7 @@ import { StyleArrowLeft, StyleArrowRight } from "@/components/SidebarDropdown";
 import { Caption } from "@/components/Text";
 import {
   iotSolutions,
+  newsData,
   productsCarouselData,
   productsData,
   technologyCarouselData,
@@ -124,6 +125,32 @@ export default function Home() {
               <span>Partnership</span>
             </div>
           </ExtraLinkPanel>
+        </GridSection>
+      </Section>
+      <Section header={"NEWS"}>
+        <GridSection $items={3} className="mt-5 xl:my-8">
+          {newsData.map((news, i) => (
+            <Card key={i}>
+              <Image
+                src={news.image}
+                alt={news.title}
+                className="card-image"
+                width={200}
+                height={200}
+              />
+              <h4 className="card-heading">{news.title}</h4>
+              <div className="card-body">
+                <p>
+                  {news.description}
+                </p>
+              </div>
+              <div className="card-footer">
+                <a href="#">
+                  {news.date} <StyleArrowRight fontSize="small" />
+                </a>
+              </div>
+            </Card>
+          ))}
         </GridSection>
       </Section>
     </main>

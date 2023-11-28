@@ -3,7 +3,11 @@ export const iotSolutions = [
     { image: "/images/smart-home.jpg", title: "Smart Home", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Und perferendis, at cum minima mollitia sit blanditiis quasi nulla ab necessitatibus sequi ad ullam quae reiciendis quam minus"},
     { image: "/images/smart-home-1.jpg", title: "Smart Home", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Und perferendis, at cum minima mollitia sit blanditiis quasi nulla ab necessitatibus sequi ad ullam quae reiciendis quam minus"},
 ]
-
+export const newsData = [
+    { image: "/images/jumbo-1.jpg", title: "Virtual Reality", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Und perferendis, at cum minima mollitia sit blanditiis quasi nulla ab necessitatibus sequi ad ullam quae reiciendis quam minus", date: "Jun. 14, 2023"},
+    { image: "/images/smart-home.jpg", title: "Smart Home", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Und perferendis, at cum minima mollitia sit blanditiis quasi nulla ab necessitatibus sequi ad ullam quae reiciendis quam minus", date: "Jun. 14, 2023"},
+    { image: "/images/smart-home-1.jpg", title: "Smart Home", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Und perferendis, at cum minima mollitia sit blanditiis quasi nulla ab necessitatibus sequi ad ullam quae reiciendis quam minus", date: "Jun. 14, 2023"},
+]
 export const productsCarouselData = [
   { image: "/images/jumbo-1.jpg", title: "Virtual Reality" },
   { image: "/images/smart-home.jpg", title: "Smart Home" },
