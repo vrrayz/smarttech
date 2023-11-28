@@ -1,42 +1,30 @@
 "use client";
 import { Card } from "@/components/Card";
+import { Carousel } from "@/components/Carousel";
 import { Section } from "@/components/Section";
 import { StyleArrowLeft, StyleArrowRight } from "@/components/SidebarDropdown";
 import { Caption } from "@/components/Text";
 import { SCREENS } from "@/screens";
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 
 export default function Home() {
-  const carouselData = [
+  const productsCarouselData = [
     { image: "/images/jumbo-1.jpg", title: "Virtual Reality" },
     { image: "/images/smart-home.jpg", title: "Smart Home" },
     { image: "/images/smart-home-1.jpg", title: "Smart Home" },
+  ];
+  const technologyCarouselData = [
+    { image: "/images/jumbo-1.jpg", title: "Tech one", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
+    { image: "/images/jumbo-1.jpg", title: "Tech two", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
+    { image: "/images/jumbo-1.jpg", title: "Tech three", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
+    { image: "/images/jumbo-1.jpg", title: "Tech fourx", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
   ];
   const productsData = [
     { image: "/images/product_1.webp", title: "Product One" },
     { image: "/images/product_2.webp", title: "Product Two" },
     { image: "/images/product_3.webp", title: "Product Three" },
   ];
-  const [carouselItems, setCarouselItems] = useState(carouselData);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handleNext = () => {
-    setCurrentIndex((prev) => {
-      if (prev === carouselItems.length - 1) {
-        return 0;
-      }
-      return prev + 1;
-    });
-  };
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => {
-      if (prev === 0) {
-        return carouselItems.length - 1;
-      }
-      return prev - 1;
-    });
-  };
 
   return (
     <main>
@@ -116,85 +104,25 @@ export default function Home() {
         </GridSection>
       </Section>
       <Section header={"PRODUCTS"}>
-        <CarouselContainer className="container mt-5 xl:mt-8 mb-5">
-          <Carousel $itemsLength={carouselItems.length}>
-            {carouselItems.map((item, i) => (
-              <CarouselItem $currentIndex={currentIndex} key={i}>
-                <Image src={item.image} alt="item" width={300} height={100} />
-                <Caption>{item.title}</Caption>
-              </CarouselItem>
-            ))}
-          </Carousel>
-          <CarouselButtonContainer>
-            <CarouselPreviousButton onClick={() => handlePrevious()}>
-              <StyleArrowLeft />
-            </CarouselPreviousButton>
-            <CarouselNextButton onClick={() => handleNext()}>
-              <StyleArrowRight />
-            </CarouselNextButton>
-          </CarouselButtonContainer>
-        </CarouselContainer>
+        <Carousel carouselItems={productsCarouselData} />
         <GridSection $items={3} className="xl:mb-8">
           {productsData.map((product, i) => (
             <ProductDisplayContainer key={i}>
-              <img src={product.image} alt={product.title} />
+              <Image src={product.image} alt={product.title} width={300} height={300} />
               <Caption>{product.title}</Caption>
             </ProductDisplayContainer>
           ))}
         </GridSection>
+      </Section>
+      <Section header={"TECHNOLOGY"}>
+        <Carousel carouselItems={technologyCarouselData} hasDetailedCaption={true} useTabs={true} />
       </Section>
     </main>
   );
 }
 const ProductDisplayContainer = styled.div`
   position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
-const CarouselContainer = styled.div`
-  position: relative;
-`;
-const Carousel = styled.div<{ $itemsLength: number }>`
-  width: 100%;
   height: 350px;
-  margin: auto;
-  display: flex;
-  overflow: hidden;
-  ${SCREENS.lg} {
-    height: 500px;
-  }
-`;
-const CarouselButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 160px;
-  ${SCREENS.lg} {
-    top: 230px;
-  }
-`;
-const CarouselButton = styled.button`
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  background: #00000059;
-  border-radius: 50%;
-`;
-const CarouselNextButton = styled(CarouselButton)`
-  margin-right: 16px;
-`;
-const CarouselPreviousButton = styled(CarouselButton)`
-  margin-left: 16px;
-`;
-const CarouselItem = styled.div<{ $currentIndex: number }>`
-  min-width: 100%;
-  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transform: translate(-${(props) => props.$currentIndex * 100}%);
-  position: relative;
   img {
     width: 100%;
     height: 100%;
