@@ -15,10 +15,34 @@ export default function Home() {
     { image: "/images/smart-home-1.jpg", title: "Smart Home" },
   ];
   const technologyCarouselData = [
-    { image: "/images/jumbo-1.jpg", title: "Tech one", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
-    { image: "/images/jumbo-1.jpg", title: "Tech two", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
-    { image: "/images/jumbo-1.jpg", title: "Tech three", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
-    { image: "/images/jumbo-1.jpg", title: "Tech fourx", description: "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.", link: "/technology" },
+    {
+      image: "/images/jumbo-1.jpg",
+      title: "Tech one",
+      description:
+        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
+      link: "/technology",
+    },
+    {
+      image: "/images/jumbo-1.jpg",
+      title: "Tech two",
+      description:
+        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
+      link: "/technology",
+    },
+    {
+      image: "/images/jumbo-1.jpg",
+      title: "Tech three",
+      description:
+        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
+      link: "/technology",
+    },
+    {
+      image: "/images/jumbo-1.jpg",
+      title: "Tech fourx",
+      description:
+        "We build our system and connection with bank level encryption and security from smart devices, edge gateway, cloud services to applications.",
+      link: "/technology",
+    },
   ];
   const productsData = [
     { image: "/images/product_1.webp", title: "Product One" },
@@ -108,18 +132,97 @@ export default function Home() {
         <GridSection $items={3} className="xl:mb-8">
           {productsData.map((product, i) => (
             <ProductDisplayContainer key={i}>
-              <Image src={product.image} alt={product.title} width={300} height={300} />
+              <Image
+                src={product.image}
+                alt={product.title}
+                width={300}
+                height={300}
+              />
               <Caption>{product.title}</Caption>
             </ProductDisplayContainer>
           ))}
         </GridSection>
       </Section>
       <Section header={"TECHNOLOGY"}>
-        <Carousel carouselItems={technologyCarouselData} hasDetailedCaption={true} useTabs={true} />
+        <Carousel
+          carouselItems={technologyCarouselData}
+          hasDetailedCaption={true}
+          useTabs={true}
+        />
+      </Section>
+      <Section header={""}>
+        <Banner className="mt-4">
+          <div className="mt-4">
+            <h4>Smart life in your control</h4>
+            <p>Your smart home all set within a few steps</p>
+            <div className="flex gap-2 justify-center lg:justify-start lg:mt-8 lg:mb-16">
+              <Image
+                src={"/images/qr_1.jpg"}
+                width={108}
+                height={108}
+                alt="QR"
+              />
+              <Image
+                src={"/images/qr_2.jpg"}
+                width={108}
+                height={108}
+                alt="QR"
+              />
+            </div>
+          </div>
+          <Image
+            src={"/images/banner_1.webp"}
+            width={338}
+            height={154}
+            alt="banner"
+            className="banner-image"
+          />
+        </Banner>
       </Section>
     </main>
   );
 }
+const Banner = styled.div`
+  background: url("/images/banner_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 4px 0px;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+  ${SCREENS.lg} {
+    flex-direction: row;
+    text-align: left;
+    padding-right: 0px;
+
+    .banner-image {
+      flex: 0 70%;
+      height: fit-content;
+    }
+    h4 {
+      font-size: 30px;
+      margin: 16px 0px;
+    }
+    p {
+      margin: 16px 0px;
+    }
+  }
+`;
 const ProductDisplayContainer = styled.div`
   position: relative;
   height: 350px;
