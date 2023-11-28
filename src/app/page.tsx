@@ -2,6 +2,7 @@
 import { Card } from "@/components/Card";
 import { Section } from "@/components/Section";
 import { StyleArrowLeft, StyleArrowRight } from "@/components/SidebarDropdown";
+import { Caption } from "@/components/Text";
 import { SCREENS } from "@/screens";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -12,6 +13,11 @@ export default function Home() {
     { image: "/images/jumbo-1.jpg", title: "Virtual Reality" },
     { image: "/images/smart-home.jpg", title: "Smart Home" },
     { image: "/images/smart-home-1.jpg", title: "Smart Home" },
+  ];
+  const productsData = [
+    { image: "/images/product_1.webp", title: "Product One" },
+    { image: "/images/product_2.webp", title: "Product Two" },
+    { image: "/images/product_3.webp", title: "Product Three" },
   ];
   const [carouselItems, setCarouselItems] = useState(carouselData);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -110,12 +116,12 @@ export default function Home() {
         </GridSection>
       </Section>
       <Section header={"PRODUCTS"}>
-        <CarouselContainer className="container mt-5 xl:my-8">
+        <CarouselContainer className="container mt-5 xl:mt-8 mb-5">
           <Carousel $itemsLength={carouselItems.length}>
             {carouselItems.map((item, i) => (
               <CarouselItem $currentIndex={currentIndex} key={i}>
                 <Image src={item.image} alt="item" width={300} height={100} />
-                <h4 className="item-caption">{item.title}</h4>
+                <Caption>{item.title}</Caption>
               </CarouselItem>
             ))}
           </Carousel>
@@ -128,10 +134,26 @@ export default function Home() {
             </CarouselNextButton>
           </CarouselButtonContainer>
         </CarouselContainer>
+        <GridSection $items={3} className="xl:mb-8">
+          {productsData.map((product, i) => (
+            <ProductDisplayContainer key={i}>
+              <img src={product.image} alt={product.title} />
+              <Caption>{product.title}</Caption>
+            </ProductDisplayContainer>
+          ))}
+        </GridSection>
       </Section>
     </main>
   );
 }
+const ProductDisplayContainer = styled.div`
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
 const CarouselContainer = styled.div`
   position: relative;
 `;
@@ -142,7 +164,7 @@ const Carousel = styled.div<{ $itemsLength: number }>`
   display: flex;
   overflow: hidden;
   ${SCREENS.lg} {
-   height: 500px;
+    height: 500px;
   }
 `;
 const CarouselButtonContainer = styled.div`
@@ -153,7 +175,7 @@ const CarouselButtonContainer = styled.div`
   top: 160px;
   ${SCREENS.lg} {
     top: 230px;
-   }
+  }
 `;
 const CarouselButton = styled.button`
   width: 50px;
@@ -177,15 +199,6 @@ const CarouselItem = styled.div<{ $currentIndex: number }>`
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .item-caption {
-    color: #fff;
-    position: absolute;
-    bottom: 8px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 16px;
   }
 `;
 
