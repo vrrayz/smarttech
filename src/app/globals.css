@@ -36,3 +36,6 @@ body {
   /* border-color: #0A18CB; */
   border: none;
 }
+.border-bottom{
+  border-bottom: 1px solid #9fa5ae;
+}
