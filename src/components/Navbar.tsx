@@ -75,6 +75,10 @@ const NavbarContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   box-shadow: 0px 0px 8px;
   font-size: 0.85rem;
+  position: fixed;
+  width: 100vw;
+  background: #fff;
+  z-index: 100000;
 
   .logo {
     font-family: "Poppins", sans-serif;
