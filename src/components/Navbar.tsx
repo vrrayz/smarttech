@@ -63,7 +63,7 @@ const ListItem = ({ menuItem }: ListItemProps) => {
       <a href={menuItem.link}>{menuItem.title}</a>
       {menuItem.isDropdown && (
         <ul className={`dropdown-items`}>
-          {menuItem.items.map((item, j) => <li key={j}><a href="#">{item.item}</a></li>)}
+          {menuItem.items.map((item, j) => <li key={j}><a href={item.link}>{item.item}</a></li>)}
         </ul>
       )}
     </li>)

@@ -2,8 +2,8 @@ export const productsMenu = {
   title: "Products",
   items: [
     {
-      item: "Control Center",
-      link: "#",
+      item: "SMART HOME AUTOMATION LIGHTING",
+      link: "/products/categories/smart_home_automation_lighting",
     },
     {
       item: "Home Security",

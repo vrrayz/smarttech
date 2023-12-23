@@ -4,12 +4,13 @@ import styled from "styled-components";
 interface Prop {
   header: string;
   children: ReactNode;
+  className?: string;
 }
 
-export const Section = ({ header, children }: Prop) => {
+export const Section = ({ header, children, className }: Prop) => {
   return (
     <CustomSection>
-      <SectionHeader>{header}</SectionHeader>
+      <SectionHeader className={className}>{header}</SectionHeader>
       {children}
     </CustomSection>
   );
