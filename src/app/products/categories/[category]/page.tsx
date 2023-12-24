@@ -27,8 +27,9 @@ const Page = ({ params }: { params: { category: Category } }) => {
     [params.category]
   );
   const categoriesList = useMemo(() => {
-    return Object.keys(products).map((element) =>
-      element.toUpperCase().split("_").join(" ")
+    return Object.keys(products).map((element) =>{
+      return {title: element.toUpperCase().split("_").join(" "), link: element}
+    }
     );
   }, []);
   return (
@@ -59,7 +60,7 @@ const Page = ({ params }: { params: { category: Category } }) => {
             <CategoriesList>
               {categoriesList.map((category, i) => (
                 <CategoryItem key={i}>
-                  <a href={`/products/categories/${category}`}>{category}</a>
+                  <a href={`/products/categories/${category.link}`}>{category.title}</a>
                 </CategoryItem>
               ))}
             </CategoriesList>
