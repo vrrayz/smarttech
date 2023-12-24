@@ -6,8 +6,8 @@ export const productsMenu = {
       link: "/products/categories/smart_home_automation_lighting",
     },
     {
-      item: "Home Security",
-      link: "#",
+      item: "SMART HOME AUTOMATION LIGHTING",
+      link: "/products/categories/door_bells_and_access_control",
     },
     {
       item: "Smart Lighting",
