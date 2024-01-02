@@ -126,7 +126,8 @@ export const products = {
         `,
       },
       {
-        title: "Ring Video Doorbell 4 (2021 release) with Ring Chime Pro (2nd Gen)",
+        title:
+          "Ring Video Doorbell 4 (2021 release) with Ring Chime Pro (2nd Gen)",
         image: "/images/product_category/door_accessories/product_3.png",
         description: `
         <li>1080p HD Video, Night Vision, and Motion Alerts with Color Pre-Roll Video Previews</li><br/>
@@ -220,7 +221,7 @@ export const products = {
         `,
       },
       {
-        title: "Echo Show 15 | Full HD 15.6\" smart display with Alexa",
+        title: 'Echo Show 15 | Full HD 15.6" smart display with Alexa',
         image: "/images/product_category/door_accessories/product_10.png",
         description: `
         <li><span style='font-weight:bold'>Display:</span> 15.6" with 1920 x 1080 resolution. Camera: 5 MP + Shutter (Photo quality/size may vary)</li>
@@ -250,12 +251,23 @@ export const products = {
   alexa_voice_assistant: {
     items: [
       {
-        title: "",
-        image: "",
-        description: "",
+        title: "Echo Dot",
+        image: "/images/product_category/alexa_voice_assistant/product_1.png",
+        description: `
+        <li><span style='font-weight:bold'>Voice control your entertainment:</span> Stream songs from Amazon Music, Apple Music, Spotify, and others with multi-room music.</li>
+        <li><span style='font-weight:bold'>Control your smart home:</span> Use your voice to turn on lights, adjust thermostats, and lock doors with compatible devices.</li>
+        <li><span style='font-weight:bold'>Start Routines with your motion:</span> Turn on compatible lights, play your Flash Briefing, or turn on the coffee maker when you walk into the room.</li>`,
+      },
+      {
+        title: "Alexa Echo Pop",
+        image: "/images/product_category/alexa_voice_assistant/product_2.png",
+        description: `
+        <li><span style='font-weight:bold'>Voice control your entertainment:</span> Stream songs from Amazon Music, Apple Music, Spotify, and others with multi-room music.</li>
+        <li><span style='font-weight:bold'>Control your smart home:</span> Use your voice to turn on lights, adjust thermostats, and lock doors with compatible devices.</li>
+        <li><span style='font-weight:bold'>Start Routines with your motion:</span> Turn on compatible lights, play your Flash Briefing, or turn on the coffee maker when you walk into the room.</li>`,
       },
     ],
-    image: "/images/product_category/smart_lighting.png",
+    image: "/images/product_category/alexa_voice_assistant.png",
   },
   smart_locks: {
     items: [
@@ -270,12 +282,113 @@ export const products = {
   smart_detectors: {
     items: [
       {
-        title: "",
-        image: "",
-        description: "",
+        title: "Tuya Wifi Smoke Detector Sensor Alarm",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_1.png",
+        description: `
+        <span style='font-weight:bold'>Smoke Alarm:</span> Mini Smoke Detector is wonderful Safety & Security Guard for your home security.<br/>
+        <span style='font-weight:bold'>High sensitivity:</span> 360° comprehensive highsensitivity monitoring.<br/>
+        <span style='font-weight:bold'>Low power consumption:</span> This Smoke detector designed with LOW voltage & faultprompt function and will warn when low power, with Self-test function.<br/>
+        <span style='font-weight:bold'>Mobile APP reminder:</span> You will be alerted immediately in the event of a fire, to help you escape from Fire Hazard in time.<br/>
+        <span style='font-weight:bold'>Wide range of uses:</span> It is suitable for fire prevention in many places such as homes, warehouses, hotels, factories and so on.<br/>`,
+      },
+      {
+        title: "Orvibo SF30 ZigBee Smoke Sensor Pro",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_2.png",
+        description: `
+        <li><span style='font-weight:bold'>Model:</span> SF30</li>
+        <li><span style='font-weight:bold'>Size:</span> 90*37mm</li>
+        <li><span style='font-weight:bold'>Power supply:</span> DC3V (CR123A battery)</li>
+        <li><span style='font-weight:bold'>Working temp:</span>-10~55°C</li>
+        <li><span style='font-weight:bold'>Alarm sound pressure:</span> 80dB / 3M</li>
+        `,
+      },
+      {
+        title: "LifeSmart Smoke Detector MIR-SM100",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_3.png",
+        description: `
+        <li><span style='font-weight:bold'>Operating Temperature:</span> -10~55°C • Operating Humidity: 5~90% • Detection: 5m/120°</li>
+        <li><span style='font-weight:bold'>Power Supply:</span> 1 Battery CR123, 3V</li>
+        <li><span style='font-weight:bold'>Battery Life:</span> Up to 3 year</li>
+        <li><span style='font-weight:bold'>Alarm volume:</span> >85dB (3 meters in front)</li>
+        <li><span style='font-weight:bold'>Installation method:</span> Ceiling Mount, Wall Mount</li>`,
+      },
+      {
+        title: "Tuya Gas Leak Detector",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_4.png",
+        description: `
+          <li><span style='font-weight:bold'>Power Supply Type:</span> plug in</li>
+          <li><span style='font-weight:bold'>Protocol:</span> Wi-Fi</li>
+          <li><span style='font-weight:bold'>Battery Type:</span> None</li>
+          <li><span style='font-weight:bold'>Function Description:</span> Get alert from smart phone, hush from the mobile phone.</li>
+          <li><span style='font-weight:bold'>Product Size:</span> 80*80*38 mm</li>
+          <li><span style='font-weight:bold'>Support for Custom Types:</span> App Control Panel Customization, App customization, Function customization, Product appearance customization</li>
+        `,
+      },
+      {
+        title: "Orvibo SG30 Zigbee Smart Combustible Gas Sensor",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_5.png",
+        description: `
+          <li><span style='font-weight:bold'>Size:</span> 85*29.6mm</li>
+          <li><span style='font-weight:bold'>Detection gas:</span> natural gas (methane) • Working voltage: AC110V~ 220V</li>
+          <li><span style='font-weight:bold'>Alarm concentration:</span> 8% LEL ± 2% LEL</li>
+        `,
+      },
+      {
+        title: "LifeSmart LS086WH LifeSmart gas sensor",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_6.png",
+        description: `
+          <li>Real-time monitoring gas safe using</li>
+          <li>High Alarm Accuracy</li>
+          <li>Long Standby Time</li>
+          <li>Built-in Alarm</li>
+          <li>Multiple Combination of Triggers </li>
+          <li>Smart Station required</li>
+        `,
+      },
+      {
+        title: "Orvibo SN11 Wireless PIR Motion Sensor",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_7.png",
+        description: `
+          <li>Real-time monitoring gas safe using</li>
+          <li>Powered by ZigBee wireless communication technology; highly reliable and stable.</li>
+          <li>Works with Home Mate App to alert you no matter where you are if someone unauthorized is moving in the house.</li>
+          <li>Synchronize with other ZigBee devices; can realize if you walk by, then turn on lights scenes.</li>
+          <li>Ultra-low power consumption, the battery can last more than 1 year.</li>
+        `,
+      },
+      {
+        title: "DEFED Motion Sensor",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_8.png",
+        description: `
+        <li>Installation: Wall mount</li>
+        <li>LED Indicator: Yes</li>
+        <li>IR Detection Range: Up to 12m </li>
+        <li>IR Detection: Up to 90°</li>
+        <li>Power Supply: Battery CR123A, 3V</li>
+        `,
+      },
+      {
+        title: "HIKVISION AX PRO Wireless Alarm System",
+        image:
+          "/images/product_category/smart_detectors_and_sensors/product_9.png",
+        description: `
+        <li>Alarm notifications via emails and APP 4520 mAh lithium backup battery</li>
+        <li>Connects up to 96 wireless zones/outputs (including 48 PIRCAMs), 48 wireless keyfobs, 4 repeaters, 6 sounders, 8 tag readers & keypads.</li>
+        <li>Supports up to 48 network users, including 1 installer, 1 administrator, and 46 normal users</li>
+        <li>Voice prompt</li>
+        <li>Pushes alarm notification via messages or phone calls</li>
+        `,
       },
     ],
-    image: "/images/product_category/smart_lighting.png",
+    image: "/images/product_category/smart_detectors_and_sensors.png",
   },
   camera_list_and_specifications: {
     items: [

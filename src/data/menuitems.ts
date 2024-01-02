@@ -10,12 +10,12 @@ export const productsMenu = {
       link: "/products/categories/door_bells_and_access_control",
     },
     {
-      item: "Smart Lighting",
-      link: "#",
+      item: "ALEXA VOICE ASSISTANT",
+      link: "/products/categories/alexa_voice_assistant",
     },
     {
-      item: "Shading System",
-      link: "#",
+      item: "SMART DETECTORS AND SENSORS",
+      link: "/products/categories/smart_detectors",
     },
   ],
 };
