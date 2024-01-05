@@ -72,7 +72,7 @@ const Page = ({ params }: { params: { category: Category } }) => {
                   <Image src={image} alt={title} width={300} height={300} />
                   <div className="card-body mx-auto">
                     <h4 className="card-heading">{title}</h4>
-                    <p>{parse(description)}</p>
+                    <div>{parse(description)}</div>
                   </div>
                 </div>
               </Card>

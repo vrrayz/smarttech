@@ -17,6 +17,10 @@ export const productsMenu = {
       item: "SMART DETECTORS AND SENSORS",
       link: "/products/categories/smart_detectors",
     },
+    {
+      item: "CAMERA LIST AND SPECIFICATIONS",
+      link: "/products/categories/camera_list_and_specifications",
+    },
   ],
 };
 export const solutionsMenu = {

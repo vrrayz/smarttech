@@ -393,11 +393,290 @@ export const products = {
   camera_list_and_specifications: {
     items: [
       {
-        title: "",
-        image: "",
-        description: "",
+        title: "ColorVu Fixed Mini Bullet Network Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (1).png",
+        description: `
+        <li>24/7 colorful imaging</li>
+        <li>High quality imaging with 1080P and 3K resolution</li>
+        <li>Efficient H.265+ compression technology</li>
+        <li>Clear imaging against strong back light due to 120 dB WDR technology</li>
+        <li>Focus on human and vehicle classification based on deep learning</li>
+        <li>Built-in microphone for real-time audio security</li>
+        <li>Water and dust resistant (IP67)</li>
+        `,
+      },
+      {
+        title: "ColorVu Fixed Turret Network Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (2).png",
+        description: `
+        <li>24/7 colorful imaging</li>
+        <li>High quality imaging with 4MP resolution</li>
+        <li>Efficient H.265+ compression technology</li>
+        <li>Clear imaging against strong back light due to 130 dB WDR technology</li>
+        <li>Support 12 VDC power output for pickup</li>
+        <li>Focus on human and vehicle classification based on deep learning</li>
+        <li>Built-in microphone for real-time audio security</li>
+        <li>Water and dust resistant (IP67)</li>
+        <li>Audio and alarm interfaces available</li>
+        `,
+      },
+      {
+        title: "Fixed Mini Dome Network Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (3).png",
+        description: `
+          <li>2MP, 4MP, 5MP coaxial audio camera</li>
+          <li>Enhancing safety with discreet and economical built-in microphone</li>
+          <li>Transmits audio over the coaxial cable</li>
+          <li>EXIR 2.0: advanced infrared technology with 40 m IR distance</li>
+          <li>Water and dust resistant (IP67)</li>
+          <li>4 in 1 (4 signals switchable TVI/AHD/CVI/CVBS)</li>
+        `,
+      },
+      {
+        title: "MP Audio Fixed Turret Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (4).png",
+        description: `
+        <li>2MP, 4MP, 5MP coaxial audio camera</li>
+        <li>Enhancing safety with discreet and economical built-in microphone</li>
+        <li>Transmits audio over the coaxial cable</li>
+        <li>EXIR 2.0: advanced infrared technology with 40 m IR distance</li>
+        <li>Water and dust resistant (IP67)</li>
+        <li>4 in 1 (4 signals switchable TVI/AHD/CVI/CVBS)</li>
+        `,
+      },
+      {
+        title: "Vandal WDR Fixed Dome Network Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (5).png",
+        description: `
+        <li>High quality imaging</li>
+        <li>Efficient H.265+ compression technology</li>
+        <li>Clear imaging against strong back light due to 120 dB true WDR technology</li>
+        `,
+      },
+      {
+        title: "PIR Fixed Turret Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (6).png",
+        description: `
+        <li>5 MP PIR turret camera</li>
+        <li>PIR detection, strobe light alarm and alarm out to warn off intruders in real time</li>
+        <li>EXIR 2.0: advanced infrared technology with 20 m IR distance</li>
+        <li>Water and dust resistant (IP67)</li>
+        `,
+      },
+      {
+        title: "PIR Siren Bullet Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (7).png",
+        description: `
+        <li>High quality imaging with 3K, 2960 x 1665 resolution</li>
+        <li>24/7 color imaging</li>
+        <li>3D DNR technology delivers clean and sharp images</li>
+        <li>2.8 mm, 3.6 mm fixed focal lens</li>
+        <li>Up to 40 m White Light distance for bright night imaging</li>
+        <li>Detects human body through heat-sensitive passive infrared (PIR)</li>
+        <li>Active strobe light and audio alarm to warn intruders off</li>
+        <li>Water and dust resistant (IP67)</li>
+        <li>High quality audio with built-in speaker</li>
+        `,
+      },
+      {
+        title: "8-inch PTZ 25X DarkFighter IR Network Speed Dome",
+        image: "/images/product_category/camera_list_and_specifications/product (8).png",
+        description: `
+        <li>High quality imaging</li>
+        <li>Excellent low-light performance with Dark Fighter technology</li>
+        <li>25x optical zoom and 16x digital zoom provides close up views over expansive areas</li>
+        <li>Expansive night view with up to 400 m IR distance</li>
+        <li>Water and dust resistant (IP67)</li>
+        <li>Supports face capture to detect, capture, grade, and select faces in motion</li>
+        <li>Supports road traffic to detect vehicles</li>
+        `,
+      },
+      {
+        title: "Solar-powered Security Camera Setup",
+        image: "/images/product_category/camera_list_and_specifications/product (9).png",
+        description: `
+        <li>Detects human body through passive infrared which is sensitive to body temperature (PIR)</li>
+        <li>Standalone with built-in solar panel and battery</li>
+        <li>High quality imaging</li>
+        <li>Provide real-time security via built-in two-way audio</li>
+        `,
+      },
+      {
+        title: "AcuSense Strobe Light and Audible Warning Bullet Network Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (10).png",
+        description: `
+        <li>High quality imaging</li>
+        <li>Excellent low-light performance with powered-by-Dark Fighter technology</li>
+        <li>Clear imaging against strong back light due to 120 dB true WDR technology</li>
+        <li>Efficient H.265+ compression technology</li>
+        <li>Focus on human and vehicle targets classification based on deep learning</li>
+        <li>Active strobe light and audio alarm to warn intruders off</li>
+        <li>Provides real-time security via built-in two-way audio</li>
+        <li>Water and dust resistant (IP67)</li>
+        `,
+      },
+      {
+        title: "4MP 4G Solar Power Network PT Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (11).png",
+        description: `
+        <li>Supports solar power</li>
+        <li>Built in high-performance 4G Module that suits all mobile networks.</li>
+        <li>Built-in PIR sensor triggers the camera to quickly track and monitor targets.</li>
+        <li>Supports two-way talk.</li>
+        <li>Supports max. 512 G Micro SD card.</li>
+        `,
+      },
+      {
+        title: "Dahua Fixed-focal Bullet Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (12).png",
+        description: `
+        <li>Comes in various Megapixel resolutions</li> 
+        <li>Smart IR Illumination</li>
+        <li>Water and dust resistant</li>
+        <li>Built-in MIC.</li>
+        `,
+      },
+      {
+        title: "C1C Wi-Fi Smart Home Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (13).png",
+        description: `
+        <li>720p/1080p </li>
+        <li>110"/130"</li>
+        <li>Supports 2.4GHz Wi-Fi</li>
+        <li>Infrared Night Vision</li>
+        <li>Two-Way Talk</li>
+        <li>Supports MicroSD Cards (Up to 256 GB)</li>
+        `,
+      },
+      {
+        title: "Fixed Bullet Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (14).png",
+        description: `
+        <li>Comes in various Megapixel resolutions</li>
+        <li>EXIR 2.0: advanced infrared technology with 30 m/ 80 m IR distance</li>
+        <li>Water and dust resistant (IP67)</li>
+        <li>4 in 1 (4 signals switchable TVI/AHD/CVI/CVBS)</li>
+        `,
+      },
+      {
+        title: "V380 WiFi Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (15).png",
+        description: `
+        <li>Fixed 3.6mm HD Lens with 720P or 960P Resolution </li>
+        <li>Designed with SD card slot</li>
+        <li>Supports Android and IOS system for smart phone, tablet and PC</li>
+        <li>Two-way audio for communication:</li>
+        <li>Waterproof</li>
+        <li>Motion detection</li>
+        `,
+      },
+      {
+        title: "BC2 Wi-Fi Smart Home Battery Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (16).png",
+        description: `
+        <li>1080p Resolution</li>
+        <li>IR Night Vision Up to 5 m (16 ft)</li>
+        <li>Smart Human Motion Detection</li>
+        <li>Two-Way Talk</li>
+        <li>Up to 50 Days of Battery Life (2,000 mAh Rechargeable Battery)</li>
+        <li>Palm-Sized Camera</li>
+        <li>Install with Magnetic Base</li>
+        <li>Smart Integration with Google Assistant & Amazon Alexa-enabled device</li>
+        <li>Supports MicroSD Card (Up to 256 GB)</li>
+        `,
+      },
+      {
+        title: "EZVIZ BC1C Battery-Powered Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (17).png",
+        description: `
+        <li>1080p Video</li>
+        <li>Accurate Human Motion Detection</li>
+        <li>Color Night Vision</li>
+        <li>Customizable Voice Alerts</li>
+        <li>Built-in 32 GB eMMC Storage </li>
+        <li>Two-Way Talk  </li>
+        <li>7,800 mAh Rechargeable Lithium Battery  </li>
+        <li>Supports 2.4 GHz Wi-Fi </li>
+        <li>IP66 Dust and Water Protection </li>
+        <li>Works with EZVIZ Solar Panel for battery charging </li> 
+        <li>H.265 Video Compression  </li>
+        <li>Active Defense</li>
+        `,
+      },
+      {
+        title: "C6N 4MP Pan & Tilt Smart Home Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (18).png",
+        description: `
+        <li>4MP Resolution  </li>
+        <li>360-degree rotation </li>
+        <li>IR Night Vision (Up to 10 m/33 ft) </li>
+        <li>Human Motion Detection </li>
+        <li>Auto-Tracking  </li>
+        <li>Two-Way Talk  </li>
+        <li>Sleep Mode for Privacy Protection </li>
+        <li>Supports Micro SD Card (Up to 256 GB) & EZVIZ CloudPlay Storage</li>
+        `,
+      },
+      {
+        title: "LC1C Two-in-One Outdoor Security Solution",
+        image: "/images/product_category/camera_list_and_specifications/product (19).png",
+        description: `
+        <li>Supports Micro SD Card up to 256 GB</li>
+        <li>Two-Way Talk  </li>
+        <li>Built-in Siren, 100 dB  </li>
+        <li>Advanced Motion Alerts (PIR Sensing + Motion Detection) </li>
+        <li>PIR Motion-Activated Floodlights </li>
+        <li>Infrared Night Vision up to 25 m/82 ft.  </li>
+        <li>Starlight Standard Sensor</li>
+        `,
+      },
+      {
+        title: "S220 SoloCam",
+        image: "/images/product_category/camera_list_and_specifications/product (20).png",
+        description: `
+        <li>Solar Charging </li> 
+        <li>Day and Night Clarity </li>
+        <li>Easy Installation  </li>
+        <li>Human Detection</li>
+        `,
+      },
+      {
+        title: "S210 eufyCam (eufyCam 2C Pro) Add-on Camera",
+        image: "/images/product_category/camera_list_and_specifications/product (21).png",
+        description: `
+        <li>2K Resolution</li>
+        <li>Half-Year Security from 1 Charge</li>
+        <li>Detailed Night Vision</li>
+        <li>Ready for Any Weather</li>
+        <li>Requires eufy Security HomeBase 2</li>
+        `,
+      },
+      {
+        title: "S210 Outdoor Cam",
+        image: "/images/product_category/camera_list_and_specifications/product (22).png",
+        description: `
+        <li>Ultra-Clear 2K Resolution</li>
+        <li>Subscription-Free Security </li>
+        <li>Security Under the Spotlight Flexible Installation</li>
+        <li>Powerful On-Device Al</li>
+        <li>Uses SD-card for memory storage</li>
+        `,
+      },
+      {
+        title: "Intelligent Solar Energy Alert PTZ Camera Rotational",
+        image: "/images/product_category/camera_list_and_specifications/product (23).png",
+        description: `
+        <li>Motion detection and alarm prompt </li>
+        <li>Real-time remote viewing.</li>
+        <li>Outdoor waterproof and dustproof</li>
+        <li>Storage loop recording, Uses SD card and 4G sim card</li>
+        <li>Sound and motion detection</li>
+        <li>Suitable for outdoor use.</li>
+        <li>Two-way audio: built-in microphone and speaker</li>
+        <li>UBox app</li>
+        `,
       },
     ],
-    image: "/images/product_category/smart_lighting.png",
+    image: "/images/product_category/camera_list_and_specifications.png",
   },
 };
