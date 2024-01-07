@@ -272,12 +272,211 @@ export const products = {
   smart_locks: {
     items: [
       {
-        title: "",
-        image: "",
-        description: "",
+        title: "ORVIBO SMART DOOR LOCK s2",
+        image: "/images/product_category/smart_locks/product (1).png",
+        description: `
+        <span style='font-weight:bold'>Password capacity:</span> 25 users, 5 temporarily authorized users. Each user can set fingerprints: 3 for normal, 1 for emergency </br>
+        <span style='font-weight:bold'>WiFi networking:</span> Connect to the network through wifi to realize the network function </br>
+        <span style='font-weight:bold'>Unlocking method:</span> Fingerprint, password, NFC card, encryption card, remote authorization, mechanical key</br>
+        <span style='font-weight:bold'>Smart alarm:</span> Low voltage alarm, prying alarm, emergency unlocking alarm, unlocking verification failure alarm</br>
+        `,
       },
+      {
+        title: "ORVIBO SMART DOOR LOCK c1",
+        image: "/images/product_category/smart_locks/product (2).png",
+        description: `
+        <span style='font-weight:bold'>Battery type:</span> 4 AA batteries, 2 cells/group </br>
+        <span style='font-weight:bold'>Standby current:</span> 400 days battery life</br>
+        <span style='font-weight:bold'>User capacity:</span> 25 users (each user supports 4 fingerprints and 2 sets of passwords and 2 sets of cards)</br>
+        <span style='font-weight:bold'>Wireless module:</span> WiFi</br>
+        <span style='font-weight:bold'>Unlocking method:</span> fingerprint, password, card, mechanical key</br>
+        <span style='font-weight:bold'>Intelligent alarm:</span> anti-theft, crisis unlock, low battery</br>
+        `,
+      },
+      {
+        title: "TUYA SMART DOOR LOCK (P8S)",
+        image: "/images/product_category/smart_locks/product (3).png",
+        description: `
+        <span style='font-weight:bold'>Unlocking mehod:</span> password, key, fingerprint, card and OTP unlock</br>
+        <span style='font-weight:bold'>Door Thickness:</span> 35mm-55mm </br>
+        <span style='font-weight:bold'>User Support:</span> Up to 50 Users </br>
+        <span style='font-weight:bold'>Power Supply:</span> Rechargeable battery</br>
+        `,
+      },
+      {
+        title: "D12 SMART DOOR LOCK",
+        image: "/images/product_category/smart_locks/product (4).png",
+        description: `
+        <span style='font-weight:bold'>Unlocking mehod:</span> password, key, fingerprint, card and OTP unlock</br>
+        <span style='font-weight:bold'>Door Thickness:</span> 35mm-55mm </br>
+        <span style='font-weight:bold'>User Support:</span> Up to 50 Users </br>
+        <span style='font-weight:bold'>Power Supply:</span> AA batteries</br>
+        `,
+      },
+      {
+        title: "PHILLIPS SMART DOOR LOCK",
+        image: "/images/product_category/smart_locks/product (5).png",
+        description: `
+        <li>Fingerprint</li>
+        <li>Card</li>
+        <li>Pin Code</li>
+        <li>App</li>
+        <li>Mechanical key</li>
+        `,
+      },
+      {
+        title: "SMART DOOR LOCK (PLSX-2)",
+        image: "/images/product_category/smart_locks/product (6).png",
+        description: `
+        <span style='font-weight:bold'>Door Type:</span> Wooden door, Steel door, Stainless Steel door</br>
+        <span style='font-weight:bold'>Unlock way:</span> Fingerprint, Password, Card, Key </br>
+        <span style='font-weight:bold'>Battery:</span> Rechargeable Batteries</br>
+        `,
+      },
+      {
+        title: "X-5 FACIAL RECOGNITION TUYA SMART DOOR LOCK",
+        image: "/images/product_category/smart_locks/product (7).png",
+        description: `        
+        <span style='font-weight:bold'>Battery type:</span> 4200mah built-in lithium battery (rechargeable)<br/>
+        <span style='font-weight:bold'>Wireless module:</span> WiFi<br/>
+        <span style='font-weight:bold'>Unlocking method:</span> fingerprint, password, card, mechanical key<br/>
+        <span style='font-weight:bold'>Door type:</span> Wooden door, Iron door, Security Door, bronze door.<br/>
+        `,
+      },
+      {
+        title: "3D SMART FACIAL RECOGNITION TUYA DOOR LOCK (D001)",
+        image: "/images/product_category/smart_locks/product (8).png",
+        description: `               
+        <span style='font-weight:bold'>Unlocking method:</span> Face, card, key, Password, Fingerprint, Tuya app</br>
+        <span style='font-weight:bold'>Camera:</span> 3D binocular infrared living body recognition</br>
+        <span style='font-weight:bold'>Battery:</span> Rechargeable battery</br>
+        <span style='font-weight:bold'>Door Type:</span> Wood door, Steel door, Stainless Steel door</br>
+        `,
+      },
+      {
+        title: "Fully Automatic Smart Door Lock (LHO2)",
+        image: "/images/product_category/smart_locks/product (9).png",
+        description: `               
+        <span style='font-weight:bold'>Door Type:</span> Wood door, Steel door, Stainless Steel door, Aluminum door</br>
+        <span style='font-weight:bold'>Data Storage Options:</span> Cloud</br>
+        <span style='font-weight:bold'>Network:</span> Wi-Fi</br>
+        <span style='font-weight:bold'>Unlocking method:</span> Tuya app,  Password, Fingerprint, card, key, USB port</br>
+        <span style='font-weight:bold'>Application:</span> Apartment, VILLA, Office</br>
+        `,
+      },
+      {
+        title: "ISRAELI BLUETOOTH LOCK",
+        image: "/images/product_category/smart_locks/product (10).png",
+        description: `               
+        <span style='font-weight:bold'>Model:</span> G-lock</br>
+        <span style='font-weight:bold'>Unlocking mehod:</span> password, key, Bluetooth, fingerprint unlock</br>
+        <span style='font-weight:bold'>User Support:</span> Up to 200 Users </br>
+        <span style='font-weight:bold'>Power Supply:</span> 7.4v Lithium battery.</br>
+        `,
+      },
+      {
+        title: "SMART FINGERPRINT AND BLUETOOTH LOCK",
+        image: "/images/product_category/smart_locks/product (11).png",
+        description: `                 
+        <li>Finger Print </li>
+        <li>Keypad</li>
+        <li>Fob (Mifare 13.56 MHz) </li>
+        <li>TTLock App</li>
+        <li>Mechanical Key</li>
+        <li>WiFi, Bluetooth</li>
+        <li>Specific to Israeli Doors</li>
+        `,
+      },
+      {
+        title: "SMART DOOR LOCK (Q16S PRO)",
+        image: "/images/product_category/smart_locks/product (12).png",
+        description: `               
+        <span style='font-weight:bold'>Door Type:</span> Wood, Steel door, Stainless steel, Aluminium door</br>
+        <span style='font-weight:bold'>Data Storage Options:</span> Cloud</br>
+        <span style='font-weight:bold'>Network:</span> Wi-Fi</br>
+        <span style='font-weight:bold'>Unlocking method:</span> Tuya app,  Password, Fingerprint, card, key</br>
+        <span style='font-weight:bold'>Application:</span> Apartment, VILLA, House</br>
+        `,
+      },
+      {
+        title: "SMART FINGERPRINT AND BLUETOOTH LOCK",
+        image: "/images/product_category/smart_locks/product (13).png",
+        description: `                 
+        <li>Finger Print </li>
+        <li>Keypad</li>
+        <li>Fob (Mifare 13.56 MHz) </li>
+        <li>TTLock App</li>
+        <li>Mechanical Key</li>
+        <li>WiFi, Bluetooth</li>
+        <li>Specific to Israeli Doors</li>
+        `,
+      },
+      {
+        title: "ARTIFICIAL INTELIGENCE LOCK",
+        image: "/images/product_category/smart_locks/product (14).png",
+        description: `               
+        <span style='font-weight:bold'>Battery:</span> Powered by a rechargeable lithium-ion battery.</br>
+        <span style='font-weight:bold'>Five unlocking modes:</span> facial recognition, password, smart card, OTP, fingerprint, and mechanical key</br>
+        A built-in camera integrated for doorbell functionality</br>
+        For residential and commercial use</br>
+        Perfect substitution of traditional knob type door lock</br>
+        <span style='font-weight:bold'>App:</span> U smartGo</br>
+        `,
+      },
+      {
+        title: "DF11 FACIAL RECOGNITION LOCK",
+        image: "/images/product_category/smart_locks/product (15).png",
+        description: `                     
+        <span style='font-weight:bold'>Battery:</span> Powered by a rechargeable lithium-ion battery. </br>
+        <span style='font-weight:bold'>Door Type:</span> Wood door, Steel door, Stainless Steel door, Aluminum door </br>
+        <span style='font-weight:bold'>Unlocking method:</span> Password, Fingerprint, card, key, USB port </br>
+        <span style='font-weight:bold'>Application:</span> Apartment, VILLA, Office </br>
+        `,
+      },
+      {
+        title: "AQARA SMART DOOR LOCK A100",
+        image: "/images/product_category/smart_locks/product (16).png",
+        description: `                     
+        <span style='font-weight:bold'>Door Type:</span> Wood door, Steel door, Stainless Steel door, Aluminum door</br>
+        <span style='font-weight:bold'>Color:</span> Black</br>
+        <span style='font-weight:bold'>Power supply:</span> Batteries (AA)</br>
+        <span style='font-weight:bold'>Unlocking method:</span> Card, fingerprint, passcode, mobile application.</br>
+        `,
+      },
+      {
+        title: "AQARA SMART LOCK D100",
+        image: "/images/product_category/smart_locks/product (17).png",
+        description: `                     
+        <span style='font-weight:bold'>Door Type:</span> Wood door, Steel door, Stainless Steel door, Aluminum door</br>
+        <span style='font-weight:bold'>Network:</span> Wi-Fi</br>
+        <span style='font-weight:bold'>Unlocking method:</span> Mobile app, Password, Fingerprint, card, key</br>
+        <span style='font-weight:bold'>Application:</span> Apartment, VILLA, Office</br>
+        `,
+      },
+      {
+        title: "INNOVATE S50 SMART HOTEL DOOR LOCK",
+        image: "/images/product_category/smart_locks/product (18).png",
+        description: `                             
+        <span style='font-weight:bold'>Power Source:</span> Battery<br/>
+        <span style='font-weight:bold'>Material:</span> stainless steel<br/>
+        <span style='font-weight:bold'>Color:</span> Silver & Black<br/>
+        <span style='font-weight:bold'>Power supply:</span> DC 6V 4 Batteries (AA)<br/>
+        <span style='font-weight:bold'>Unlocking method:</span> Card<br/>
+        `,
+      },
+      {
+        title: "HIGHCLASS HOTEL LOCK (OH01)",
+        image: "/images/product_category/smart_locks/product (19).png",
+        description: `                                     
+        <span style='font-weight:bold'>Material:</span> Aluminum Alloy</br>
+        <span style='font-weight:bold'>Color:</span> Black</br>
+        <span style='font-weight:bold'>Unlock way:</span> Card and Key </br>
+        <span style='font-weight:bold'>Application:</span> Hotel</br>
+        `,
+      },
+
     ],
-    image: "/images/product_category/smart_lighting.png",
+    image: "/images/product_category/smart_locks.png",
   },
   smart_detectors: {
     items: [
@@ -394,7 +593,8 @@ export const products = {
     items: [
       {
         title: "ColorVu Fixed Mini Bullet Network Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (1).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (1).png",
         description: `
         <li>24/7 colorful imaging</li>
         <li>High quality imaging with 1080P and 3K resolution</li>
@@ -407,7 +607,8 @@ export const products = {
       },
       {
         title: "ColorVu Fixed Turret Network Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (2).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (2).png",
         description: `
         <li>24/7 colorful imaging</li>
         <li>High quality imaging with 4MP resolution</li>
@@ -422,7 +623,8 @@ export const products = {
       },
       {
         title: "Fixed Mini Dome Network Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (3).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (3).png",
         description: `
           <li>2MP, 4MP, 5MP coaxial audio camera</li>
           <li>Enhancing safety with discreet and economical built-in microphone</li>
@@ -434,7 +636,8 @@ export const products = {
       },
       {
         title: "MP Audio Fixed Turret Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (4).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (4).png",
         description: `
         <li>2MP, 4MP, 5MP coaxial audio camera</li>
         <li>Enhancing safety with discreet and economical built-in microphone</li>
@@ -446,7 +649,8 @@ export const products = {
       },
       {
         title: "Vandal WDR Fixed Dome Network Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (5).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (5).png",
         description: `
         <li>High quality imaging</li>
         <li>Efficient H.265+ compression technology</li>
@@ -455,7 +659,8 @@ export const products = {
       },
       {
         title: "PIR Fixed Turret Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (6).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (6).png",
         description: `
         <li>5 MP PIR turret camera</li>
         <li>PIR detection, strobe light alarm and alarm out to warn off intruders in real time</li>
@@ -465,7 +670,8 @@ export const products = {
       },
       {
         title: "PIR Siren Bullet Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (7).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (7).png",
         description: `
         <li>High quality imaging with 3K, 2960 x 1665 resolution</li>
         <li>24/7 color imaging</li>
@@ -480,7 +686,8 @@ export const products = {
       },
       {
         title: "8-inch PTZ 25X DarkFighter IR Network Speed Dome",
-        image: "/images/product_category/camera_list_and_specifications/product (8).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (8).png",
         description: `
         <li>High quality imaging</li>
         <li>Excellent low-light performance with Dark Fighter technology</li>
@@ -493,7 +700,8 @@ export const products = {
       },
       {
         title: "Solar-powered Security Camera Setup",
-        image: "/images/product_category/camera_list_and_specifications/product (9).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (9).png",
         description: `
         <li>Detects human body through passive infrared which is sensitive to body temperature (PIR)</li>
         <li>Standalone with built-in solar panel and battery</li>
@@ -502,8 +710,10 @@ export const products = {
         `,
       },
       {
-        title: "AcuSense Strobe Light and Audible Warning Bullet Network Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (10).png",
+        title:
+          "AcuSense Strobe Light and Audible Warning Bullet Network Camera",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (10).png",
         description: `
         <li>High quality imaging</li>
         <li>Excellent low-light performance with powered-by-Dark Fighter technology</li>
@@ -517,7 +727,8 @@ export const products = {
       },
       {
         title: "4MP 4G Solar Power Network PT Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (11).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (11).png",
         description: `
         <li>Supports solar power</li>
         <li>Built in high-performance 4G Module that suits all mobile networks.</li>
@@ -528,7 +739,8 @@ export const products = {
       },
       {
         title: "Dahua Fixed-focal Bullet Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (12).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (12).png",
         description: `
         <li>Comes in various Megapixel resolutions</li> 
         <li>Smart IR Illumination</li>
@@ -538,7 +750,8 @@ export const products = {
       },
       {
         title: "C1C Wi-Fi Smart Home Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (13).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (13).png",
         description: `
         <li>720p/1080p </li>
         <li>110"/130"</li>
@@ -550,7 +763,8 @@ export const products = {
       },
       {
         title: "Fixed Bullet Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (14).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (14).png",
         description: `
         <li>Comes in various Megapixel resolutions</li>
         <li>EXIR 2.0: advanced infrared technology with 30 m/ 80 m IR distance</li>
@@ -560,7 +774,8 @@ export const products = {
       },
       {
         title: "V380 WiFi Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (15).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (15).png",
         description: `
         <li>Fixed 3.6mm HD Lens with 720P or 960P Resolution </li>
         <li>Designed with SD card slot</li>
@@ -572,7 +787,8 @@ export const products = {
       },
       {
         title: "BC2 Wi-Fi Smart Home Battery Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (16).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (16).png",
         description: `
         <li>1080p Resolution</li>
         <li>IR Night Vision Up to 5 m (16 ft)</li>
@@ -587,7 +803,8 @@ export const products = {
       },
       {
         title: "EZVIZ BC1C Battery-Powered Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (17).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (17).png",
         description: `
         <li>1080p Video</li>
         <li>Accurate Human Motion Detection</li>
@@ -605,7 +822,8 @@ export const products = {
       },
       {
         title: "C6N 4MP Pan & Tilt Smart Home Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (18).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (18).png",
         description: `
         <li>4MP Resolution  </li>
         <li>360-degree rotation </li>
@@ -619,7 +837,8 @@ export const products = {
       },
       {
         title: "LC1C Two-in-One Outdoor Security Solution",
-        image: "/images/product_category/camera_list_and_specifications/product (19).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (19).png",
         description: `
         <li>Supports Micro SD Card up to 256 GB</li>
         <li>Two-Way Talk  </li>
@@ -632,7 +851,8 @@ export const products = {
       },
       {
         title: "S220 SoloCam",
-        image: "/images/product_category/camera_list_and_specifications/product (20).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (20).png",
         description: `
         <li>Solar Charging </li> 
         <li>Day and Night Clarity </li>
@@ -642,7 +862,8 @@ export const products = {
       },
       {
         title: "S210 eufyCam (eufyCam 2C Pro) Add-on Camera",
-        image: "/images/product_category/camera_list_and_specifications/product (21).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (21).png",
         description: `
         <li>2K Resolution</li>
         <li>Half-Year Security from 1 Charge</li>
@@ -653,7 +874,8 @@ export const products = {
       },
       {
         title: "S210 Outdoor Cam",
-        image: "/images/product_category/camera_list_and_specifications/product (22).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (22).png",
         description: `
         <li>Ultra-Clear 2K Resolution</li>
         <li>Subscription-Free Security </li>
@@ -664,7 +886,8 @@ export const products = {
       },
       {
         title: "Intelligent Solar Energy Alert PTZ Camera Rotational",
-        image: "/images/product_category/camera_list_and_specifications/product (23).png",
+        image:
+          "/images/product_category/camera_list_and_specifications/product (23).png",
         description: `
         <li>Motion detection and alarm prompt </li>
         <li>Real-time remote viewing.</li>

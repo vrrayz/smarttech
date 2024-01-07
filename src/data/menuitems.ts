@@ -21,6 +21,10 @@ export const productsMenu = {
       item: "CAMERA LIST AND SPECIFICATIONS",
       link: "/products/categories/camera_list_and_specifications",
     },
+    {
+      item: "SMART LOCKS",
+      link: "/products/categories/smart_locks",
+    },
   ],
 };
 export const solutionsMenu = {
