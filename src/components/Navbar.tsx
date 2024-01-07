@@ -199,7 +199,7 @@ const NavbarList = styled.ul`
     transition: max-height 250ms;
   }
   li.dropdown:hover .dropdown-items{
-    max-height: 350px;
+    max-height: 400px;
   }
 `;
 const SearchContainer = styled.div`
