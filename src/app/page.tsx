@@ -243,7 +243,7 @@ const Jumbotron = styled.section`
   width: 100vw;
   overflow: hidden;
   height: 60vh;
-  background: url("/images/jumbo-1.jpg");
+  background: url("/images/jumbo-3.jpg");
   background-size: cover;
   background-position: center;
   .jumbo-item {
