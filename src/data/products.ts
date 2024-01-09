@@ -12,7 +12,7 @@ export const products = {
     items: [
       {
         title: "Tuya Solution 1 Gang Smart Switch",
-        image: "/images/product_category/smart_lighting/product_1.png",
+        image: "/images/product_category/smart_lighting/product_1.webp",
         description: `
             Product Category: Light Switch<br/>
             
@@ -28,7 +28,7 @@ export const products = {
       },
       {
         title: "2 Gang Smart Switch",
-        image: "/images/product_category/smart_lighting/product_2.png",
+        image: "/images/product_category/smart_lighting/product_2.jpg",
         description: `
         Product Category: Light Switch<br/>
 
@@ -60,7 +60,7 @@ export const products = {
       },
       {
         title: "MixPad Mini Super Smart Panel",
-        image: "/images/product_category/smart_lighting/product_4.png",
+        image: "/images/product_category/smart_lighting/product_4.jpg",
         description: `
         Display: 4 inches, 480 480P resolution<br/>
     
@@ -76,7 +76,7 @@ export const products = {
       },
       {
         title: "MixPad S All-in-one Gateway Panel",
-        image: "/images/product_category/smart_lighting/product_5.png",
+        image: "/images/product_category/smart_lighting/product_5.webp",
         description: `
         Storage combination: 2GB RAM 8GB ROM<br/>
         Display: 4 inches, 480 480P resolution Touch layer: multi-touch capacitive screen.<br/>
@@ -90,7 +90,7 @@ export const products = {
       },
       {
         title: "MixPad Genie",
-        image: "/images/product_category/smart_lighting/product_6.png",
+        image: "/images/product_category/smart_lighting/product_6_1.png",
         description: `
         Screen: 3.27 inches' color high-definition touch<br/>
         Screen Functions: switch lights, home appliance control,<br/>
@@ -99,7 +99,7 @@ export const products = {
         Power supply mode: zero live wire power supply, two-end socket power supply, data line power supply<br/>`,
       },
     ],
-    image: "/images/product_category/smart_lighting.png",
+    image: "/images/product_category/smart_lighting_1.jpg",
   },
   door_bells_and_access_control: {
     items: [
@@ -246,7 +246,7 @@ export const products = {
         `,
       },
     ],
-    image: "/images/product_category/door_accessories.png",
+    image: "/images/product_category/door_accessories_clone.png",
   },
   alexa_voice_assistant: {
     items: [
@@ -267,7 +267,7 @@ export const products = {
         <li><span style='font-weight:bold'>Start Routines with your motion:</span> Turn on compatible lights, play your Flash Briefing, or turn on the coffee maker when you walk into the room.</li>`,
       },
     ],
-    image: "/images/product_category/alexa_voice_assistant.png",
+    image: "/images/product_category/alexa_voice_assistant_clone.png",
   },
   smart_locks: {
     items: [
@@ -476,7 +476,7 @@ export const products = {
       },
 
     ],
-    image: "/images/product_category/smart_locks.png",
+    image: "/images/product_category/smart_locks_clone.png",
   },
   smart_detectors: {
     items: [
@@ -587,7 +587,7 @@ export const products = {
         `,
       },
     ],
-    image: "/images/product_category/smart_detectors_and_sensors.png",
+    image: "/images/product_category/smart_detectors_and_sensors_clone.png",
   },
   camera_list_and_specifications: {
     items: [
@@ -900,6 +900,6 @@ export const products = {
         `,
       },
     ],
-    image: "/images/product_category/camera_list_and_specifications.png",
+    image: "/images/product_category/camera_list_and_specifications_clone.png",
   },
 };

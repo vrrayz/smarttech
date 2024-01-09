@@ -35,12 +35,12 @@ const Page = ({ params }: { params: { category: Category } }) => {
   return (
     <main>
       <Section header={""} className="mt-8 md:mt-16">
-        <CategoryPlaceholder>
+        <CategoryPlaceholder className="mt-16">
           <CategoryPlaceholderImage
             src={currentCategory.image}
             alt={"Category image"}
-            width={300}
-            height={200}
+            width={1200}
+            height={148}
           />
           <SectionHeader className="md:my-3">{categoryTitle}</SectionHeader>
         </CategoryPlaceholder>
@@ -145,12 +145,12 @@ const CategoryPlaceholder = styled.div`
   }
 `;
 const CategoryPlaceholderImage = styled(Image)`
-  width: 100%;
-  height: 143px;
-  object-fit: contain;
+  // width: 100%;
+  // height: 143px;
+  // object-fit: cover;
 
   ${SCREENS.md} {
-    height: 230px;
+    // height: 230px;
   }
 `;
 
