@@ -11,12 +11,22 @@ import {
   productsData,
   technologyCarouselData,
 } from "@/data/home";
+import { products } from "@/data/products";
 import { SCREENS } from "@/screens";
 import { CloudDownload, DocumentScanner, People } from "@mui/icons-material";
 import Image from "next/image";
+import { useMemo } from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 
 export default function Home() {
+  const smartLighting = useMemo(
+    () =>
+      products.smart_home_automation_lighting.items.filter(
+        (value, index) => index > 2
+      ),
+    []
+  );
   return (
     <main>
       <Jumbotron className="mb-5 xl:mb-8">
@@ -27,29 +37,32 @@ export default function Home() {
           </a>
         </div>
       </Jumbotron>
-      <Section header={"IOT SOLUTIONS"}>
+      <Section header={"SMART HOME AUTOMATION LIGHTING"}>
         <GridSection $items={3} className="mt-5 xl:my-8">
-          {iotSolutions.map((solution, i) => (
-            <Card key={i}>
+          {smartLighting.map((solution, i) => (
+            <CustomCard key={i}>
               <Image
                 src={solution.image}
                 alt={solution.title}
-                className="card-image"
+                className="card-image contain"
                 width={200}
                 height={200}
               />
               <h4 className="card-heading">{solution.title}</h4>
               <div className="card-body">
-                <p>
-                  {solution.description}
-                </p>
+                <div style={{ maxHeight: "172px", overflow: "hidden" }}>
+                  {parse(solution.description)}
+                </div>
               </div>
-              <div className="card-footer">
-                <a href="#">
+              <CustomCardFooter className="card-footer">
+                <a
+                  href="/products/categories/smart_home_automation_lighting"
+                  className="footer-btn"
+                >
                   Learn More <StyleArrowRight fontSize="small" />
                 </a>
-              </div>
-            </Card>
+              </CustomCardFooter>
+            </CustomCard>
           ))}
         </GridSection>
       </Section>
@@ -140,9 +153,7 @@ export default function Home() {
               />
               <h4 className="card-heading">{news.title}</h4>
               <div className="card-body">
-                <p>
-                  {news.description}
-                </p>
+                <p>{news.description}</p>
               </div>
               <div className="card-footer">
                 <a href="#">
@@ -269,5 +280,16 @@ const Jumbotron = styled.section`
   }
   .jumbo-item a ${StyleArrowRight} {
     margin-left: 8px;
+  }
+`;
+const CustomCard = styled(Card)`
+  display: flex;
+  flex-direction: column;
+`;
+const CustomCardFooter = styled.div`
+  display: flex;
+  height: 100%;
+  a.footer-btn {
+    margin-top: auto;
   }
 `;

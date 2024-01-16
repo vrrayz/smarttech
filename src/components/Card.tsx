@@ -8,6 +8,9 @@ export const Card = styled.div`
     width: 100%;
     object-fit: cover;
   }
+  .contain{
+    object-fit: contain;
+  }
   .card-heading {
     padding: 24px;
     font-size: 1.4rem;
