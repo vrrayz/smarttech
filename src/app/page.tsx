@@ -27,6 +27,13 @@ export default function Home() {
       ),
     []
   );
+  const cameras = useMemo(
+    () =>
+      products.camera_list_and_specifications.items.filter(
+        (value, index) => index <= 2
+      ),
+    []
+  );
   return (
     <main>
       <Jumbotron className="mb-5 xl:mb-8">
@@ -66,10 +73,12 @@ export default function Home() {
           ))}
         </GridSection>
       </Section>
-      <Section header={"PRODUCTS"}>
-        <Carousel carouselItems={productsCarouselData} />
-        <GridSection $items={3} className="xl:mb-8">
-          {productsData.map((product, i) => (
+      <Section header={""}>
+        {/* <Carousel carouselItems={productsCarouselData} /> */}
+        <Image src={'/images/products_carousel/security_cams.png'} width={1200} height={444} alt={"cam_image"} />
+        <Image src={'/images/products_carousel/alexa.png'} width={1200} height={444} alt={"cam_image"} />
+        {/* <GridSection $items={3} className="xl:mb-8">
+          {cameras.map((product, i) => (
             <ProductDisplayContainer key={i}>
               <Image
                 src={product.image}
@@ -80,21 +89,14 @@ export default function Home() {
               <Caption>{product.title}</Caption>
             </ProductDisplayContainer>
           ))}
-        </GridSection>
-      </Section>
-      <Section header={"TECHNOLOGY"}>
-        <Carousel
-          carouselItems={technologyCarouselData}
-          hasDetailedCaption={true}
-          useTabs={true}
-        />
+        </GridSection> */}
       </Section>
       <Section header={""}>
         <Banner className="mt-4">
           <div className="mt-4">
             <h4>Smart life in your control</h4>
             <p>Your smart home all set within a few steps</p>
-            <div className="flex gap-2 justify-center lg:justify-start lg:mt-8 lg:mb-16">
+            {/* <div className="flex gap-2 justify-center lg:justify-start lg:mt-8 lg:mb-16">
               <Image
                 src={"/images/qr_1.jpg"}
                 width={108}
@@ -107,7 +109,7 @@ export default function Home() {
                 height={108}
                 alt="QR"
               />
-            </div>
+            </div> */}
           </div>
           <Image
             src={"/images/banner_1.webp"}
@@ -123,7 +125,7 @@ export default function Home() {
           <ExtraLinkPanel $background="/images/banner_bg.jpg">
             <div className="panel-overlay">
               <CloudDownload fontSize="large" />
-              <span>Download Center</span>
+              <span>Products</span>
             </div>
           </ExtraLinkPanel>
           <ExtraLinkPanel $background="/images/banner_bg.jpg">
@@ -135,12 +137,12 @@ export default function Home() {
           <ExtraLinkPanel $background="/images/banner_bg.jpg">
             <div className="panel-overlay">
               <People fontSize="large" />
-              <span>Partnership</span>
+              <span>Support</span>
             </div>
           </ExtraLinkPanel>
         </GridSection>
       </Section>
-      <Section header={"NEWS"}>
+      {/* <Section header={"NEWS"}>
         <GridSection $items={3} className="mt-5 xl:my-8">
           {newsData.map((news, i) => (
             <Card key={i}>
@@ -163,7 +165,7 @@ export default function Home() {
             </Card>
           ))}
         </GridSection>
-      </Section>
+      </Section> */}
     </main>
   );
 }

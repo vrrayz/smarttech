@@ -70,7 +70,7 @@ export const Carousel = ({
             </CarouselItem>
           ))}
         </MainCarousel>
-        <CarouselButtonContainer $hasDetailedCaption={hasDetailedCaption}>
+        <CarouselButtonContainer $hasDetailedCaption={false}>
           <CarouselPreviousButton onClick={() => handlePrevious()}>
             <StyleArrowLeft />
           </CarouselPreviousButton>
@@ -141,12 +141,13 @@ const CarouselContainer = styled.div`
 `;
 const MainCarousel = styled.div<{ $itemsLength: number }>`
   width: 100%;
-  height: 350px;
+  max-width: 750px;
+  height: 100%;
   margin: auto;
   display: flex;
   overflow: hidden;
   ${SCREENS.lg} {
-    height: 500px;
+    // height: 500px;
   }
 `;
 const CarouselButtonContainer = styled.div<{ $hasDetailedCaption?: boolean }>`
@@ -154,9 +155,9 @@ const CarouselButtonContainer = styled.div<{ $hasDetailedCaption?: boolean }>`
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: ${(props) => (props.$hasDetailedCaption ? "80" : "160")}px;
+  top: ${(props) => (props.$hasDetailedCaption ? "48" : "96")}px;
   ${SCREENS.lg} {
-    top: ${(props) => (props.$hasDetailedCaption ? "161" : "230")}px;
+    top: ${(props) => (props.$hasDetailedCaption ? "96" : "192")}px;
   }
 `;
 const CarouselButton = styled.button`
@@ -182,12 +183,21 @@ const CarouselItem = styled.div<{
   position: relative;
   img {
     width: 100%;
-    height: ${(props) => (props.$hasDetailedCaption ? "60" : "100")}%;
+    height: 150px;
+    // width: 100%;
+    // height: ${(props) => (props.$hasDetailedCaption ? "60" : "100")}%;
     object-fit: cover;
+    max-width: 750px;
+  }
+  ${SCREENS.md} {
+    img {
+      height:208px;
+    }
   }
   ${SCREENS.lg} {
     img {
-      height: ${(props) => (props.$hasDetailedCaption ? "70" : "100")}%;
+
+      // height: ${(props) => (props.$hasDetailedCaption ? "70" : "100")}%;
     }
   }
 `;

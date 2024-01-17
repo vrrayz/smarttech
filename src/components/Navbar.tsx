@@ -6,6 +6,7 @@ import { Sidebar } from "./Sidebar";
 import { SCREENS } from "@/screens";
 import { menuItems } from "@/data/menuitems";
 import { SearchInput } from "./Forms";
+import Image from "next/image";
 
 export interface MenuItem {
   title: string;
@@ -26,7 +27,8 @@ export const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
   return (
     <NavbarContainer>
-      <h1 className="logo">SmartTech</h1>
+      <Image src={'/images/logo.png'} width={100} height={47} alt={'Logo'} />
+      {/* <Image src={'/images/logo.png'} width={200} height={94} alt={'Logo'} /> */}
       <ToggleMenuContainer>
         <a className="text-small btn btn-primary nav-button">Get a quote</a>
         <MobileNavToggler
