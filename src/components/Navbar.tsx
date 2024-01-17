@@ -27,7 +27,7 @@ export const Navbar = () => {
   const [isNavToggled, setIsNavToggled] = useState(false);
   return (
     <NavbarContainer>
-      <Image src={'/images/logo.png'} width={100} height={47} alt={'Logo'} />
+      <Image src={'/images/logo.png'} width={100} height={47} alt={'Logo'} className="logo" />
       {/* <Image src={'/images/logo.png'} width={200} height={94} alt={'Logo'} /> */}
       <ToggleMenuContainer>
         <a className="text-small btn btn-primary nav-button">Get a quote</a>

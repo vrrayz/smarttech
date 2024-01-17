@@ -39,8 +39,8 @@ const Page = ({ params }: { params: { category: Category } }) => {
           <CategoryPlaceholderImage
             src={currentCategory.image}
             alt={"Category image"}
-            width={300}
-            height={200}
+            width={1200}
+            height={154}
           />
           <SectionHeader className="md:my-3">{categoryTitle}</SectionHeader>
         </CategoryPlaceholder>
