@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 import { SCREENS } from "@/screens";
 import {
-  aboutMenu,
   productsMenu,
   solutionsMenu,
   supportMenu,
@@ -42,11 +41,9 @@ export const Footer = () => {
           </FooterMenu>
           <FooterMenu>
             <h4>About Us</h4>
-            {aboutMenu.items.map((about, i) => (
-              <a href={about.link} key={i}>
-                {about.item}
+            <a href='/about'>
+                About us
               </a>
-            ))}
             <ContactButton className="text-small btn btn-primary nav-button">
               Get a quote
             </ContactButton>

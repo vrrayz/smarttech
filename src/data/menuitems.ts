@@ -69,22 +69,9 @@ export const supportMenu = {
       },
     ],
   };
-  export const aboutMenu = {
-    title: "About Us",
-    items: [
-      {
-        item: "News",
-        link: "#",
-      },
-      {
-        item: "Company Profile",
-        link: "#",
-      },
-    ],
-  };
   export const menuItems = [
     {title: 'Home',isDropdown: false, link: '/', items: []},
     {...productsMenu, isDropdown: true},
     {...supportMenu, isDropdown: true},
-    {...aboutMenu, isDropdown: true},
+    {title: 'About Us', isDropdown: false, link: '/about', items: []},
   ]

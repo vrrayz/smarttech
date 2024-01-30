@@ -252,7 +252,7 @@ const GridSection = styled.div<{ $items: number }>`
   }
 `;
 
-const Jumbotron = styled.section`
+export const Jumbotron = styled.section`
   width: 100vw;
   overflow: hidden;
   height: 60vh;
