@@ -1,11 +1,11 @@
 "use client";
 
 import { Section } from "@/components/Section";
-import { Jumbotron } from "../page";
 import styled from "styled-components";
 import { Card } from "@/components/Card";
 import Image from "next/image";
 import { SCREENS } from "@/screens";
+import { Jumbotron } from "@/components/Jumbotron";
 
 export default function About() {
   return (
