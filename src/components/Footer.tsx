@@ -23,34 +23,25 @@ export const Footer = () => {
               </a>
             ))}
           </FooterMenu>
-          <FooterMenu>
-            <h4>Solutions</h4>
-            {solutionsMenu.items.map((solution, i) => (
-              <a href={solution.link} key={i}>
-                {solution.item}
-              </a>
-            ))}
-          </FooterMenu>
+          
           <FooterMenu>
             <h4>Support</h4>
-            {supportMenu.items.map((support, i) => (
-              <a href={support.link} key={i}>
-                {support.item}
+              <a href="mailto:support@bolesenterprise.io" >
+              support@bolesenterprise.io
               </a>
-            ))}
           </FooterMenu>
           <FooterMenu>
             <h4>About Us</h4>
             <a href='/about'>
                 About us
               </a>
-            <ContactButton className="text-small btn btn-primary nav-button">
-              Get a quote
+            <ContactButton className="text-small btn btn-primary nav-button" href="/support">
+              Contact Us
             </ContactButton>
           </FooterMenu>
         </FooterMenuContainer>
-        <ContactButton className="text-small btn btn-primary nav-button">
-          Get a quote
+        <ContactButton className="text-small btn btn-primary nav-button" href="/support">
+          Contact us
         </ContactButton>
         <div className="md:flex md:justify-between border-bottom">
           <ContactLinks>
@@ -96,6 +87,7 @@ const ContactButton = styled.a`
   padding: 8px;
   font-size: 18px;
   font-weight: 300;
+  max-height: 50px;
   ${SCREENS.md} {
     display: none;
   }
@@ -127,7 +119,6 @@ const FooterMenuContainer = styled.div`
     margin-bottom: 16px;
   }
   ${SCREENS.lg} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 32px;
   }
 `;

@@ -30,7 +30,7 @@ export const Navbar = () => {
       <Image src={'/images/logo.png'} width={100} height={47} alt={'Logo'} className="logo" />
       {/* <Image src={'/images/logo.png'} width={200} height={94} alt={'Logo'} /> */}
       <ToggleMenuContainer>
-        <a className="text-small btn btn-primary nav-button">Get a quote</a>
+        <a className="text-small btn btn-primary nav-button" href="/support">Get a quote</a>
         <MobileNavToggler
           className={`${isNavToggled && "transformed"}`}
           onClick={() => setIsNavToggled(!isNavToggled)}

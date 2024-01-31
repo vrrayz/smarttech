@@ -19,6 +19,7 @@ import { useMemo } from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
 import { Jumbotron } from "@/components/Jumbotron";
+import { GridSection } from "@/components/GridSection";
 
 export default function Home() {
   const smartLighting = useMemo(
@@ -76,8 +77,18 @@ export default function Home() {
       </Section>
       <Section header={""}>
         {/* <Carousel carouselItems={productsCarouselData} /> */}
-        <Image src={'/images/products_carousel/security_cams.png'} width={1200} height={444} alt={"cam_image"} />
-        <Image src={'/images/products_carousel/alexa.png'} width={1200} height={444} alt={"cam_image"} />
+        <Image
+          src={"/images/products_carousel/security_cams.png"}
+          width={1200}
+          height={444}
+          alt={"cam_image"}
+        />
+        <Image
+          src={"/images/products_carousel/alexa.png"}
+          width={1200}
+          height={444}
+          alt={"cam_image"}
+        />
         {/* <GridSection $items={3} className="xl:mb-8">
           {cameras.map((product, i) => (
             <ProductDisplayContainer key={i}>
@@ -123,19 +134,19 @@ export default function Home() {
       </Section>
       <Section header={""}>
         <GridSection $items={3}>
-          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+          <ExtraLinkPanel $background="/images/banner_bg.jpg" href={'products/categories/smart_home_automation_lighting'}>
             <div className="panel-overlay">
               <CloudDownload fontSize="large" />
               <span>Products</span>
             </div>
           </ExtraLinkPanel>
-          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+          <ExtraLinkPanel $background="/images/banner_bg.jpg" href="/about">
             <div className="panel-overlay">
               <DocumentScanner fontSize="large" />
               <span>About Us</span>
             </div>
           </ExtraLinkPanel>
-          <ExtraLinkPanel $background="/images/banner_bg.jpg">
+          <ExtraLinkPanel $background="/images/banner_bg.jpg" href="/support">
             <div className="panel-overlay">
               <People fontSize="large" />
               <span>Support</span>
@@ -170,7 +181,8 @@ export default function Home() {
     </main>
   );
 }
-const ExtraLinkPanel = styled.div<{ $background: string }>`
+const ExtraLinkPanel = styled.a<{ $background: string }>`
+  display: block;
   background: url(${(props) => props.$background});
   background-position: center;
   background-size: cover;
@@ -242,17 +254,6 @@ const ProductDisplayContainer = styled.div`
     object-fit: cover;
   }
 `;
-
-const GridSection = styled.div<{ $items: number }>`
-  display: grid;
-  grid-template-rows: repeat(${(props) => props.$items}, 1fr);
-  gap: 16px;
-  ${SCREENS.md} {
-    grid-template-columns: repeat(${(props) => props.$items}, 1fr);
-    grid-template-rows: none;
-  }
-`;
-
 
 const CustomCard = styled(Card)`
   display: flex;
